@@ -43,7 +43,7 @@ if uploaded_file:
             resized_image = cv2.flip(resized_image, -1)
 
         # Show result
-        st.image(resized_image, caption="🖼️ Processed Image", use_column_width=True)
+        st.image(resized_image, caption="🖼️ Processed Image", use_container_width=True)
 
         # Prepare for download
         with io.BytesIO() as buff:
